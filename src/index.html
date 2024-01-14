@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +12,79 @@
 </head>
 
 <body>
+ 
+  <header>
+    <img src="img/logo-m3.png" alt="logoM3">
+    <button><img src="img/shopping-bag-solid.svg" alt="shoppingbag"> </button>
+  </header>
+
+  <div class="menu">
+    <h1>Blusas</h1>
+    <div class="menu-mobile">
+      <button class="open-mobile-filter">Filtrar</button>
+      <button class="mobile-orderBy">Ordenar</button>
+    </div>
+
+    <div class="dropdown">
+      <p class="orderBy">
+        Ordenar por <img src="img/chevron-down-solid.svg" alt="arrowdown">
+      </p>
+      <div class="dropdown-option" >
+        <button class="order-1">Mais recentes</button>
+        <button class="order-2">Menor preço</button>
+        <button class="order-3">Maior preço</button>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="mobile">
+      <div>
+        <h2 class="mobile-title">FILTRAR</h2>
+        <button class="close-mobile-filter">
+          <img src="img/x-solid.svg" alt="closefiltermenu">
+        </button>
+      </div>
+      <hr>
+    </div>
+    <div class="colors">
+      <h2>CORES</h2>
+
+      <div class="checkbox" id="Amarelo">
+        <div class="checkbox-box">
+          <div class="checkbox-mark"></div>
+        </div>
+        <p>Amarelo</p>
+      </div>
+
+      <div class="checkbox" id="Azul">
+        <div class="checkbox-box">
+          <div class="checkbox-mark"></div>
+        </div>
+        <p>Azul</p>
+      </div>
+
+      <div class="checkbox" id="Branco">
+        <div class="checkbox-box">
+          <div class="checkbox-mark"></div>
+        </div>
+        <p>Branco</p>
+      </div>
+
+
+  </aside>
+
+
 
 </body>
-<h1>Desafio m3</h1>
 
-<script src="bundle.js"></script>
 
+<main>
+
+</main>
+<footer>
+  
+</footer>
+
+<script type="module" src="src/ts/index.ts"></script>
 </html>
